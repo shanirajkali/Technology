@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <bean id="triangle" class="kali.spring.Triangle">
+   		<property name="type" value="Equilatral"></property>
+   </bean>
+ 
+ 	<bean id="circle" class="kali.spring.Circle">
+ 		<constructor-arg value="this is a Circle"></constructor-arg>
+ 	</bean>
+ 	
+ 	<bean id="ractangle" class="kali.spring.RactAngle">
+ 		<constructor-arg type="java.lang.String" value="this is a Circle"></constructor-arg>
+ 	</bean>
+ 	
+ 	<bean id="twoArgConstructorRactangle" class="kali.spring.RactAngle">
+ 		<constructor-arg index="0" value="44"></constructor-arg>
+ 		<constructor-arg index="1" value="this is the ractangle"></constructor-arg>
+ 	</bean>
+ 	
+</beans>
