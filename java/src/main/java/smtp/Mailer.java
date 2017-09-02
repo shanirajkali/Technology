@@ -7,7 +7,7 @@ import java.util.*;
 public class Mailer {
 
    final String senderEmailID = "news@crazyhindi.com";
-   final String senderPassword = "____________";
+   final String senderPassword = "$1KALIhpdlink";
    final String emailSMTPserver = "mail.crazyhindi.com";
    final String emailServerPort = "587";
    String receiverEmailID = null;
